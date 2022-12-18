@@ -1,8 +1,8 @@
 class Solution:
     def findWords(self, words: List[str]) -> List[str]:
-        raw1 = {'o', 'r', 'q', 't', 'i', 'u', 'y', 'e', 'w', 'p'}
-        raw2 = {'g', 's', 'd', 'h', 'k', 'j', 'f', 'l', 'a'}
-        raw3 = {'v', 'x', 'b', 'n', 'm', 'c', 'z'}
+        raw1 = set("qwertyuiop")
+        raw2 = set("asdfghjkl")
+        raw3 = set("zxcvbnm")
         
         k = []
         for word in words:
