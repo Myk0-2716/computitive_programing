@@ -4,8 +4,8 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         for i in range(len(nums)):
-            for j in range(0,len(nums)-1):
+            for j in range(len(nums)-1):
                 if nums[j] > nums[j+1]:
                     nums[j],nums[j+1] = nums[j+1],nums[j]
-        print(nums)
+        return nums
         
